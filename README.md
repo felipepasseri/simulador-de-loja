@@ -28,7 +28,7 @@ Uma **loja online fictícia** feita com **JavaScript puro** (sem frameworks)!
 
 ## **Demo**
 
-![Minha Loja](https://github.com/user-attachments/assets/8be5b35d-db8d-46c7-b1b0-38851edf86f9)
+![Minha Loja](https://github.com/user-attachments/assets/df97d2c8-6789-45d3-9b3c-2ccfbeba4abc)
 
 ## **Criação**
 
