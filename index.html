@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loja de Produtos</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>🛒 Loja Online</h1>
+        <p>Gerencie seus produtos e carrinho</p>
+      </div>
+
+      <div class="main-content">
+        <!-- Produtos -->
+        <div class="produtos-section">
+          <button class="btn-adicionar" id="btnAdicionarProduto">
+            + Novo Produto
+          </button>
+
+          <div class="form-section" id="formProduto">
+            <div class="form-group">
+              <label>Nome do Produto:</label>
+              <input type="text" id="nomeProduto" placeholder="Ex: iPhone 15" />
+            </div>
+            <div class="form-group">
+              <label>Preço (R$):</label>
+              <input
+                type="number"
+                id="precoProduto"
+                step="0.01"
+                placeholder="0.00"
+              />
+            </div>
+            <div class="form-group">
+              <label>Categoria:</label>
+              <select id="categoriaProduto">
+                <option value="">Selecione...</option>
+                <option value="Eletrônicos">Eletrônicos</option>
+                <option value="Roupas">Roupas</option>
+                <option value="Casa">Casa</option>
+                <option value="Esportes">Esportes</option>
+              </select>
+            </div>
+            <div class="botoes-form">
+              <button class="btn-cancelar" id="btnCancelarProduto">
+                Cancelar
+              </button>
+              <button class="btn-salvar" id="btnSalvarProduto">
+                Salvar Produto
+              </button>
+            </div>
+          </div>
+
+          <div class="lista-produtos" id="listaProdutos">
+            <!-- Produtos vão aparecer aqui -->
+          </div>
+        </div>
+
+        <!-- Carrinho -->
+        <div class="carrinho-section">
+          <h3>🛍️ Carrinho (0)</h3>
+          <div id="itensCarrinho"></div>
+          <div class="total-carrinho" id="totalCarrinho">Total: R$ 0</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
